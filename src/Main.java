@@ -19,5 +19,23 @@ public class Main {
             e) wywołać metody suma i róznica (obie wersje) z klasy punkt
         */
 
+        Point pointA = new Point(5);
+        System.out.println(pointA); // metoda toString() zostaje wywoływana implicytnie w metodzie println
+
+        pointA = new Point(3, 9, 5);
+        System.out.println(pointA); // metoda toString() zostaje wywoływana implicytnie w metodzie println
+
+        pointA.setpX(52);
+        pointA.setpY(-42);
+        pointA.setpZ(17);
+        System.out.println(pointA); // metoda toString() zostaje wywoływana implicytnie w metodzie println
+
+        System.out.println(pointA.getpX());
+        System.out.println(pointA.getpY());
+        System.out.println(pointA.getpZ());
+
+        System.out.println(pointA.sum());
+        System.out.println(pointA.difference());
+        System.out.println(pointA.difference(-2, 4, 3));
     }
 }
