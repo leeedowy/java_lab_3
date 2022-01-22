@@ -14,5 +14,18 @@ public class Main {
             oraz stworzyć listę typu najbardziej generycznego np. List<Budynek>
          */
 
+        Horse horse = new Horse("wheet");
+        horse.setPlanet("Earth");
+        horse.setLifeSpan(3000);
+        horse.setType("mammal");
+
+        Lion lion = new Lion("red");
+        lion.setPlanet("Morvir");
+        lion.setLifeSpan(4500);
+        lion.setType("mammal");
+
+        Tree tree = new Tree(10, "oak");
+        tree.setPlanet("Tatooine");
+        tree.setLifeSpan(10000);
     }
 }
